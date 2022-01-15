@@ -3,6 +3,9 @@
 #include "Figure.h"
 #include <iostream>
 #include "Circle.h"
+
+
+#include "qlist.h"
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -21,6 +24,24 @@ int main(int argc, char *argv[])
     cout << *x;
     delete x;
     x = nullptr;
+
+
+
+    QList<Figure*> list;
+
+    Line *line = new Line(0,0,5,5, true);
+
+    Circle *circle = new Circle(0,0,5,true);
+
+
+
+
+
+
+
+
+
+
 
 
 

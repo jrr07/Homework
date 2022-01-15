@@ -35,6 +35,9 @@ int Line::getEndX(){
 int Line::getEndY(){
     return this -> endY;
 }
+
+#include <iostream>
 Line::~Line(){
 
+    std::cout << "line ~Line" << std::endl;
 }
