@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
 
 
-    //Github 테스트용입니다.
+    //Github 테스트용입니다. 수정했습니다.
 
 
 
