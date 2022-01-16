@@ -1,5 +1,5 @@
 #include "Line.h"
-
+#include <iostream>
 Line::Line(){
     this->startX=0;
     this ->startY=0;
@@ -35,8 +35,11 @@ int Line::getEndX(){
 int Line::getEndY(){
     return this -> endY;
 }
+/*void Line::print(){
+   std::cout << "Line:(" << this->startX << ", " << this->startY << ")->(" << this->endX << ", " << this->endY << ")" << std::endl;
+}
+*/
 
-#include <iostream>
 Line::~Line(){
 
     std::cout << "line ~Line" << std::endl;
