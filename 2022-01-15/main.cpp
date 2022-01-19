@@ -40,20 +40,35 @@ int main(int argc, char *argv[])
 
     Line line(0,0,1,1,true);
 
-    cout << "line startX  " << line.getStartX() << endl;
-    cout << "line startY  " << line.getStartY() << endl;
-    cout << "line endX  " << line.getEndX() << endl;
-    cout << "line endY  " << line.getEndY() << endl;
+    cout << "line startX: " << line.getStartX() << endl;
+    cout << "line startY: " << line.getStartY() << endl;
+    cout << "line endX: " << line.getEndX() << endl;
+    cout << "line endY: " << line.getEndY() << endl;
 
     cout << "color " << line.getColor() << endl;
 
-    Line *line2 = new Line(0,0,5,5, false);
-    cout << "line2 startX  " << line2->getStartX() << endl;
-    cout << "line2 startY  " << line2->getStartY() << endl;
-    cout << "line2 endX  " << line2->getEndX() << endl;
-    cout << "line2 endY  " << line2->getEndY() << endl;
 
-    Circle *circle2 = new Circle(0,0,5,true);
+    Circle circle(0,0,1,true);
+    cout << "circle x: " << circle.getCenterX() << endl;
+    cout << "circle y: " << circle.getCenterY() << endl;
+    cout << "circle radius: " << circle.getRadius() << endl;
+    cout << "circle color: " << circle.getColor() << endl;
+
+
+
+    Line *line2 = new Line(3,3,5,5, false);
+    cout << "line2 startX: " << line2->getStartX() << endl;
+    cout << "line2 startY: " << line2->getStartY() << endl;
+    cout << "line2 endX: " << line2->getEndX() << endl;
+    cout << "line2 endY: " << line2->getEndY() << endl;
+
+    cout << "color " << line2->getColor() << endl;
+
+    Circle *circle2 = new Circle(2,2,4,true);
+    cout << "circle x: " << circle2->getCenterX() << endl;
+    cout << "circle y: " << circle2->getCenterY() << endl;
+    cout << "circle radius: " << circle2->getRadius() << endl;
+    cout << "circle color: " << circle2->getColor() << endl;
 
     delete line2;
     line2 = nullptr;
