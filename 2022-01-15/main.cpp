@@ -24,21 +24,37 @@ int main(int argc, char *argv[])
     cout << *x;
     delete x;
     x = nullptr;*/
-/*
+
     Line * line = nullptr;
     line = new Line(0, 0, 5, 5, true);
+
+    cout << "line startX: " << line->getStartX() << endl;
+    cout << "line startY: " << line->getStartY() << endl;
+    cout << "line endX: " << line->getEndX() << endl;
+    cout << "line endY: " << line->getEndY() << endl;
+
+    cout << "color " << line->getColor() << endl;
+
+
+
     Circle *circle = nullptr;
     circle = new Circle(0, 0, 10, true);
-    line->print();
+
+    cout << "circle x: " << circle->getCenterX() << endl;
+    cout << "circle y: " << circle->getCenterY() << endl;
+    cout << "circle radius: " << circle->getRadius() << endl;
+    cout << "circle color: " << circle->getColor() << endl;
+
+   /* line->print();*/
     delete line;
     line = nullptr;
     delete circle;
     circle = nullptr;
-    return 0;*/
+    return 0;
 
     QList<Figure*> list;
 
-    Line line(0,0,1,1,true);
+  /*  Line line(0,0,1,1,true);
 
     cout << "line startX: " << line.getStartX() << endl;
     cout << "line startY: " << line.getStartY() << endl;
@@ -65,15 +81,15 @@ int main(int argc, char *argv[])
     cout << "color " << line2->getColor() << endl;
 
     Circle *circle2 = new Circle(2,2,4,true);
-    cout << "circle x: " << circle2->getCenterX() << endl;
-    cout << "circle y: " << circle2->getCenterY() << endl;
-    cout << "circle radius: " << circle2->getRadius() << endl;
-    cout << "circle color: " << circle2->getColor() << endl;
+    cout << "circle2 x: " << circle2->getCenterX() << endl;
+    cout << "circle2 y: " << circle2->getCenterY() << endl;
+    cout << "circle2 radius: " << circle2->getRadius() << endl;
+    cout << "circle2 color: " << circle2->getColor() << endl;
 
     delete line2;
     line2 = nullptr;
     delete circle2;
-    circle2 = nullptr;
+    circle2 = nullptr;*/
 
     return 0;
 
