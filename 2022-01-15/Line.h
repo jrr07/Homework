@@ -20,6 +20,7 @@ public:
     int getStartY();
     int getEndX();
     int getEndY();
+    void print();
     ~Line();
 };
 
