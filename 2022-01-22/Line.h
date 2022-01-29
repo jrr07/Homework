@@ -22,6 +22,7 @@ public:
     int getEndY();
     void print();
     ~Line();
+    virtual void whoAreYou();
 };
 
 
