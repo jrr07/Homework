@@ -49,3 +49,16 @@ Line::~Line(){
 void Line::whoAreYou(){
     cout << "i am line" << endl;
 }
+void Line::setData(int startX,int startY,int endX,int endY){
+    this->startX = startX;
+    this->startY = startY;
+    this->endX = endX;
+    this->endY = endY;
+}
+void Line::setData(int startX, int startY){
+    this->startX = startX;
+    this->startY = startY;
+}
+void Line::setData(int endX){
+    this->endX = endX;
+}
