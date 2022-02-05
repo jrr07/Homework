@@ -1,4 +1,5 @@
 #include "Circle.h"
+#include <iostream>
 
 Circle::Circle(){
     this->centerX = 0;
@@ -34,4 +35,20 @@ int Circle::getRadius(){
 }
 Circle::~Circle(){
 
+}
+void Circle::whoAreYou(){
+    std::cout << "i am circle" << std::endl;
+}
+void Circle::setData(int centerX, int centerY, int radius){
+    this->centerX = centerX;
+    this->centerY = centerY;
+    this->radius = radius;
+
+}
+void Circle::setData(int centerX){
+    this->centerX = centerX;
+}
+void Circle::setData(int centerX, int centerY){
+    this->centerX = centerX;
+    this->centerY = centerY;
 }

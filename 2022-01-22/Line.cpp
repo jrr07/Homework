@@ -1,5 +1,6 @@
 #include "Line.h"
 #include <iostream>
+using namespace std;
 Line::Line(){
     this->startX=0;
     this ->startY=0;
@@ -42,5 +43,22 @@ int Line::getEndY(){
 
 Line::~Line(){
 
-    std::cout << "line ~Line" << std::endl;
+   // std::cout << "line ~Line" << std::endl;
+}
+
+void Line::whoAreYou(){
+    cout << "i am line" << endl;
+}
+void Line::setData(int startX,int startY,int endX,int endY){
+    this->startX = startX;
+    this->startY = startY;
+    this->endX = endX;
+    this->endY = endY;
+}
+void Line::setData(int startX, int startY){
+    this->startX = startX;
+    this->startY = startY;
+}
+void Line::setData(int endX){
+    this->endX = endX;
 }

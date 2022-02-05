@@ -11,6 +11,7 @@ public:
     void setColor(bool color);
     bool getColor();
     virtual ~Figure() =0; //추상클래스 선언
+    virtual void whoAreYou() = 0;
 };
 
 

@@ -22,6 +22,10 @@ public:
     int getEndY();
     void print();
     ~Line();
+    virtual void whoAreYou();
+    void setData(int startX,int  startY,int endX,int endY);
+    void setData(int startX, int startY);
+    void setData(int endX);
 };
 
 
